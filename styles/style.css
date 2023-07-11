@@ -76,6 +76,10 @@ li {
   border-bottom-right-radius: 1rem;
   color: #ffffff;
 }
+#submit:hover {
+  background-color: #67367b;
+  cursor: pointer;
+}
 .title,
 .answer {
   padding: 0 2rem;
@@ -98,6 +102,9 @@ li {
   flex-direction: row;
   align-items: center;
   gap: 1rem;
+}
+label:hover {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 576px) {

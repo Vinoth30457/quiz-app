@@ -10,34 +10,59 @@ const main = document.getElementById("main");
 
 const questions = [
   {
-    question: "Which language runs in a web browser?",
-    option: ["Java", "C", "Python", "JavaScript"],
+    question: `1) What is the National Tree of India.`,
+    Answer: 2,
+    option: ["Tamarind Tree", "Banyan Tree", "Neem Tree", "Peepal Tree"],
+  },
+  {
+    question: `2) What is the National Fruit of India.`,
     Answer: 4,
+    option: ["Pomegranate", "Apple", "Banana", "Mango"],
   },
   {
-    question: "What does CSS stands for?",
-    option: [
-      "Central Style Sheets",
-      "Cascading Style Sheets",
-      "Cascading Simple Sheets",
-      "Cars SUVs Sailboats",
-    ],
-    Answer: 2,
-  },
-  {
-    question: "What does HTML stand for?",
-    option: [
-      "Hypertext Markup Language",
-      "Hypertext Markdown Language",
-      "Hyperloop Machine Language",
-      "Helicopters Terminals Motorboats Lamborginis",
-    ],
+    question: `3) What is the National Bird of India.`,
     Answer: 1,
+    option: ["Peacock", "Kingfisher", "Bald Eagle", "Parrot"],
   },
   {
-    question: "What year was JavaScript launched?",
-    option: ["1996", "1995", "1994", "none of the above"],
-    Answer: 2,
+    question: `4) What is the National Animal of India.`,
+    Answer: 3,
+    option: ["Deer", " Giraffe", "Bengal Tiger", "Lion"],
+  },
+  {
+    question: `5) What is the National Flower of India.`,
+    Answer: 1,
+    option: ["Lotus", "Jasmine", "Lily", "Sunflower"],
+  },
+  {
+    question: `6) What is the National Monument of India.`,
+    Answer: 3,
+    option: ["Charminar", "Red Fort", "India Gate", "Gateway of India"],
+  },
+  {
+    question: `7) What is the National Heritage Animal.`,
+    Answer: 4,
+    option: ["Sheep", "Cow", "Deer", "Elephant"],
+  },
+  {
+    question: `8) What is the National Aquatic Animal of India.`,
+    Answer: 1,
+    option: ["Dolphin", "Fish", "Octopus", "Whale"],
+  },
+  {
+    question: `9) What is the National River of India.`,
+    Answer: 3,
+    option: [
+      "The Narmada River",
+      "The Krishna River",
+      "The Ganga River",
+      "The Brahmaputra River",
+    ],
+  },
+  {
+    question: `10) What is the National Game of India.`,
+    Answer: 1,
+    option: ["Hockey", "Cricket", "Football", "Volleyball"],
   },
 ];
 
@@ -83,16 +108,16 @@ const checkAnswer = (user) => {
 };
 
 btn.addEventListener("click", () => {
-  if (increse < 3) {
+  if (increse < 9) {
     increse += 1;
 
     changeQuestion();
-  } else if (increse >= 4) {
+  } else if (increse >= 10) {
     init();
   } else {
     questionEl.innerText = ``;
     optionContainer.innerHTML = ``;
-    optionContainer.innerHTML = `<h1 class="answer">You answered ${score}/4 questions correctly</h1>`;
+    optionContainer.innerHTML = `<h1 class="answer">You answered ${score}/10 questions correctly</h1>`;
     btn.innerText = `Reload`;
     increse += 1;
   }

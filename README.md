@@ -1,4 +1,4 @@
-# Frontend Mentor - tic tac toe
+# Frontend Mentor - Quiz App
 
 ## Welcome! 👋
 
@@ -6,7 +6,7 @@ Thanks for checking out my project.
 
 ## The challenge
 
-the challenge is to build out this tic tac toe app using the function
+the challenge is to build out this Quiz app using the function
 
 ### Links
 
